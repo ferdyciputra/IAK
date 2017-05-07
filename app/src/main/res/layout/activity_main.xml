@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9c9c1"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/greenday1"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/textshare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHARE"
+        android:layout_below="@+id/gambar1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@style/stylekite"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/greenday3"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="100dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textshare">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sejarah Awal GreenDay"
+                android:textStyle="italic"
+                android:paddingLeft="60dp"
+                android:textColor="#05fd01"
+                android:background="#c9c9c1"
+                android:textSize="25sp"
+                android:id="@+id/texcontent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texcontent"
+                android:layout_marginTop="10dp"
+                android:text="@string/isi"
+                android:background="#c9c9c1"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
